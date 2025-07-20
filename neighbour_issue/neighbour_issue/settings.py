@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'djoser',
     'accounts',
     'issues',
-    'cloudinary',
-    'cloudinary_storage',
+    #'cloudinary',
+    #'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -133,4 +133,3 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
-
