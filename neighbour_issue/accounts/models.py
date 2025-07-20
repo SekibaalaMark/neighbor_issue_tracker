@@ -10,6 +10,8 @@ class CustomUser(AbstractUser):
         ('NEMA', 'NEMA'),
     )
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='resident')
+    username = models.CharField(unique=True)
+    email = models.EmailField(unique=True)
 
     def __str__(self):
-        return self.role
+        return self.username
